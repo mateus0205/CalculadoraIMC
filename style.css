@@ -2,7 +2,7 @@ body {
     color: rgb(0, 0, 0);
     height: 100vh; /* 100% da altura da janela de visualização */
     margin: 0; /* Remove qualquer margem padrão */
-    background-color: aliceblue;
+    background-color: #f0f4f8;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
@@ -13,38 +13,48 @@ body {
     width: 800px;
     height: 250px;
     text-align: center;
-    background-color: #8cc6f0;
-    border-radius: 20px;
+    background-color: #90caf9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* efeito de sombra*/
+    border-radius: 12px;
 }
-.input{
-    width: 300px;
+.altura, .peso{
+    width: 75%; /* Tornando a largura responsiva */
+    max-width: 300px; /* Definindo um limite máximo para a largura */
     height: 30px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    border-bottom: 20px;
-    padding: 0px 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
-    outline: none; 
-    transition: 0.3s;
-
+    padding: 10px 20px; /* Espaçamento interno adequado */
+    margin: 8px auto; /* Centraliza os elementos horizontalmente e adiciona espaçamento vertical */
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    outline: none; /* Remove o contorno padrão ao focar */
+    transition: 0.3s; /* Transição suave para interações */
 }
 /* Efeito ao clicar no campo */
-input:focus {
+.altura:focus .peso:focus {
     border: 1px solid #1976D2; /* Cor azul ao focar */
     box-shadow: 2px 2px 8px rgba(25, 118, 210, 0.5);
 }
 #botao-calcular{
-    background: #1976D2;
+    margin-top: 12px;
+    background-color: #1565c0;
     color: white;
-    border-radius: 30px;
-    width: 200px;
-    height: 35px;
-    margin-top: 20px;
+    border: none;
+    padding: 12px;
+    width: 80%;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+#botao-calcular:hover{
+    background-color: #0d47a1;
+}
+/* TIPOGRAFIA */
+h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+} 
 
 
 

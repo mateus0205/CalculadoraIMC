@@ -10,12 +10,13 @@
 </head>
 
 <body>
-    <div class="calculadora"> 
+    <div class="calculadora">
         <h1>Calculadora de IMC</h1>
-        <form action="get">
-            <input class="input" type="text" placeholder="Digite Sua altura">
-            <input class="input" type="text" placeholder="Digite Seu peso">
-            <button id="botao-calcular">Calcular</button>
+        <form id="formulario">
+            <input name="altura" class="altura" type="text" placeholder="Digite Sua altura">
+            <input name="peso" class="peso" type="text" placeholder="Digite Seu peso">
+            <button id="botao-calcular" onclick="calcularIMC(event)" type="button">Calcular</button>
+            <p id="resultado"></p>
         </form>
     </div>
 
