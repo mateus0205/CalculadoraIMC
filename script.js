@@ -20,7 +20,10 @@ function calcularIMC() {
     let resultado = peso / (altura * altura)
 
     // calculando metricas 
-    if((resultado >= 18.5 && resultado <= 24.9 )){
+    if(resultado <=18.4){
+        document.getElementById("resultado").innerHTML = "Seu IMC é: " + resultado.toFixed(2) + " Abaixo do peso";
+    }
+    else if((resultado >= 18.5 && resultado <= 24.9 )){
         document.getElementById("resultado").innerHTML = "Seu IMC é: " + resultado.toFixed(2) + " normal";
     } else if (resultado >=25 && resultado <= 29.9){
         document.getElementById("resultado").innerHTML = "Seu IMC é: " + resultado.toFixed(2)+ " sobrepeso";
